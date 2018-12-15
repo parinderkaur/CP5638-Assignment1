@@ -1,0 +1,86 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>CossiePlay</title>
+    <link href="style_a1.css" rel="stylesheet" type="text/css">
+    <script>
+        function run_first() {
+            var id_var = sessionStorage.li_id;
+            if (id_var) {
+                document.getElementById(id_var).style.backgroundColor = "#FFFFFF";
+            }
+        }
+        function nav_li_selected(li_id) {
+            for (i = 0; i < 7; i++) {
+                document.getElementById(i.toString()).style.backgroundColor = "";
+            }
+            document.getElementById(li_id.toString()).style.backgroundColor = "#FFFFFF";
+            sessionStorage.li_id = li_id.toString()
+        }
+    </script>
+</head>
+<body onLoad="run_first()">
+    <div id="wrapper">
+        <div id="header">
+            <div id="top">
+                <div id="logo"><img src="images/logo.png" alt=""></div>
+                <h1>Cosplay hobby? Cosplay lifestyle!</h1>
+                <div class="clear"></div>
+            </div>
+            <div id="menu">
+                <ul>
+                    <li id="menuItem1"><a href="index.html" id="0" onClick="nav_li_selected(0)">Home</a></li>
+                    <li id="menuItem2"><a href="about_us.html" id="1" onClick="nav_li_selected(1)">About Us</a></li>
+                    <li id="menuItem3"><a href="discount_news.html" id="2" onClick="nav_li_selected(2)">Discount News</a></li>
+                    <li id="menuItem4"><a href="cossieplay_party.html" id="3" onClick="nav_li_selected(3)" style="color:#E36264; border:solid;">CossiePlay Party</a></li>
+                    <li id="menuItem5"><a href="products.html" id="4" onClick="nav_li_selected(4)">Products</a></li>
+                    <li id="menuItem6"><a href="contact_us.html" id="5" onClick="nav_li_selected(5)">Contact Us</a></li>
+                    <li id="menuItem7"><a href="sign_up.html" id="6" onClick="nav_li_selected(6)">Sign up</a></li>
+                </ul>
+            </div>
+            <div class="clear"></div>
+        </div>
+
+        <div id="content">
+            <div class="row">
+                <div id="party1">
+                    <img src="images/party-1506740-640x480.jpg" alt="">
+                </div>
+                <div id="party2">
+                    <h1 class="tittle">CossiePlay Party</h1>
+                    <p class="text">
+                        On the first Saturday of every month we hold a “CossiePlay Party” at the town hall. Entry is $15 for adults, $10 for ages 6-17 and kids under 6 are free. Each entry includes one non-alcoholic drink and a glow stick. Parties start at 6pm and run until 11pm. There is always a live DJ at the party (who takes requests) and dancing is common (but not required). <br><br>
+                        This is the night where you get to be whoever or whatever you want to be! We want your best costumes and your wildest make-up, it’s time to bring your most awesome character to life! This is a dress-up party on steroids!
+                    </p>
+                    <a href="sign_up.html" class="button" onClick="nav_li_selected(6)"><b>Join Now</b></a>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="row" style="padding-left:50px">
+                <h2>Party Guidelines</h2>
+                <p class="text" >
+                    CossiePlay party-goers party at their own risk and are responsible for their own safety. Check with your doctor before you party hard.<br /> <br />
+                    Party fees must be paid at the door. Cash or EFTPOS accepted. Credit card payments attract a 2% surcharge. Alcohol is served at the bar to over 18s only. No intoxicated persons will be served, but will be escorted to a taxi – paid by the party-goer.
+
+                </p>
+
+            </div>
+        </div>
+
+        <div id="footer">
+            <p>
+                Phone: 07 4771 1234 <br>
+                Fax: 07-4771 1235 <br>
+                Address: 4 Stanton Avenue, Hulkstwon <br>
+                Email:cossieplay@ gmail.com.
+            </p>
+            <h4>
+                ©CossiePlay
+            </h4>
+        </div>
+
+    </div>
+
+</body>
+</html>

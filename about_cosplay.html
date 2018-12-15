@@ -1,0 +1,79 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>CossiePlay</title>
+    <link href="style_a1.css" rel="stylesheet" type="text/css">
+    <script>
+        function run_first() {
+            var id_var = sessionStorage.li_id;
+            if (id_var) {
+                document.getElementById(id_var).style.backgroundColor = "#FFFFFF";
+            }
+        }
+        function nav_li_selected(li_id) {
+            for (i = 0; i < 7; i++) {
+                document.getElementById(i.toString()).style.backgroundColor = "";
+            }
+            document.getElementById(li_id.toString()).style.backgroundColor = "#FFFFFF";
+            sessionStorage.li_id = li_id.toString()
+        }
+    </script>
+</head>
+<body onLoad="run_first()">
+    <div id="wrapper">
+        <div id="header">
+            <div id="top">
+                <div id="logo"><img src="images/logo.png" alt=""></div>
+                <h1>Everyone can Cosplay!</h1>
+                <div class="clear"></div>
+            </div>
+            <div id="menu">
+                <ul>
+                    <li id="menuItem1"><a href="index.html" id="0" onClick="nav_li_selected(0)">Home</a></li>
+                    <li id="menuItem2"><a href="about_us.html" id="1" onClick="nav_li_selected(1)">About Us</a></li>
+                    <li id="menuItem3"><a href="discount_news.html" id="2" onClick="nav_li_selected(2)" style="color:#84A379; border:solid;">Discount News</a></li>
+                    <li id="menuItem4"><a href="cossieplay_party.html" id="3" onClick="nav_li_selected(3)">CossiePlay Party</a></li>
+                    <li id="menuItem5"><a href="products.html" id="4" onClick="nav_li_selected(4)">Products</a></li>
+                    <li id="menuItem6"><a href="contact_us.html" id="5" onClick="nav_li_selected(5)">Contact Us</a></li>
+                    <li id="menuItem7"><a href="sign_up.html" id="6" onClick="nav_li_selected(6)">Sign up</a></li>
+                </ul>
+            </div>
+            <div class="clear"></div>
+        </div>
+
+
+        <div id="content">
+            <div id="cosplay1">
+                <h1>What is Cosplay?</h1>
+                <p class="text">
+                    <b>Cosplay</b>, a portmanteau of the words costume play, is a performance art in which participants called cosplayers wear costumes and fashion accessories to represent a specific character. Favorite sources include manga and anime, comic books and cartoons, video games, and live-action films and television series. <br> <br>
+
+                    The rapid growth in the number of people cosplaying as a hobby since 1990 has made the phenomenon a significant aspect of popular culture in Japan and some other parts of Asia and in the Western world. Cosplay events are common features of fan conventions and there are also dedicated conventions and local and international competitions, as well as social networks, websites and other forms of media centered on cosplay activities.
+                <p class="text">Reproduced from <br><a href="https://en.wikipedia.org/wiki/Cosplay">https://en.wikipedia.org/wiki/Cosplay</a></p>
+
+            </div>
+
+            <div id="cosplay2">
+
+                <img src="images/book-fair-678264_1280.jpg" alt="Cosplay">
+            </div>
+        </div>
+
+        <div id="footer">
+            <p>
+                Phone: 07 4771 1234 <br>
+                Fax: 07-4771 1235 <br>
+                Address: 4 Stanton Avenue, Hulkstwon <br>
+                Email:cossieplay@ gmail.com.
+            </p>
+            <h4>
+                Yes! Everyone can COSPLAY and Having fun is what COSPLAY is all about! <br>
+                ©CossiePlay
+            </h4>
+        </div>
+
+    </div>
+
+</body>
+</html>

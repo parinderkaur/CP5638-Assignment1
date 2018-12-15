@@ -1,0 +1,75 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>CossiePlay</title>
+    <link href="style_a1.css" rel="stylesheet" type="text/css">
+    <script>
+        function run_first() {
+            var id_var = sessionStorage.li_id;
+            if (id_var) {
+                document.getElementById(id_var).style.backgroundColor = "#FFFFFF";
+            }
+        }
+        function nav_li_selected(li_id) {
+            for (i = 0; i < 7; i++) {
+                document.getElementById(i.toString()).style.backgroundColor = "";
+            }
+            document.getElementById(li_id.toString()).style.backgroundColor = "#FFFFFF";
+            sessionStorage.li_id = li_id.toString()
+        }
+    </script>
+</head>
+<body onLoad="run_first()">
+    <div id="wrapper">
+        <div id="header">
+            <div id="top">
+                <div id="logo"><img src="images/logo.png" alt=""></div>
+                <h1>Cosplay hobby? Cosplay lifestyle!</h1>
+                <div class="clear"></div>
+            </div>
+            <div id="menu">
+                <ul>
+                    <li id="menuItem1"><a href="index.html" id="0" onClick="nav_li_selected(0)">Home</a></li>
+                    <li id="menuItem2"><a href="about_us.html" id="1" onClick="nav_li_selected(1)">About Us</a></li>
+                    <li id="menuItem3"><a href="discount_news.html" id="2" onClick="nav_li_selected(2)" style="color:#EFE76B; border:solid;">Discount News</a></li>
+                    <li id="menuItem4"><a href="cossieplay_party.html" id="3" onClick="nav_li_selected(3)">CossiePlay Party</a></li>
+                    <li id="menuItem5"><a href="products.html" id="4" onClick="nav_li_selected(4)">Products</a></li>
+                    <li id="menuItem6"><a href="contact_us.html" id="5" onClick="nav_li_selected(5)">Contact Us</a></li>
+                    <li id="menuItem7"><a href="sign_up.html" id="6" onClick="nav_li_selected(6)">Sign up</a></li>
+                </ul>
+            </div>
+            <div class="clear"></div>
+        </div>
+
+        <div id="content">
+            <h1 class="tittle">What's hot in this month?</h1>
+            <div id="news1">
+                <p class="text"><b>We have some cool things happening that we want people to know about:</b></p>
+                <ul>
+                    <li>This month you can purchase 3 drinks for the price of 2 at the bar.</li>
+                    <li>First-time party-goers get a 50% discount on entry.</li>
+                    <li>If you get a costume custom made, your next party entry is free if you wear that costume.</li>
+                    <li>Wear your costume in to KFC on Stanton street and you can get a free drink with a 21-piece bucket. <br> <br> <b>Tell them you’ve been to CossiePlay!</b></li>
+                </ul>
+            </div>
+
+            <div id="news2"><img src="images/HOT1.png" alt=""></div>
+        </div>
+
+        <div id="footer">
+            <p>
+                Phone: 07 4771 1234 <br>
+                Fax: 07-4771 1235 <br>
+                Address: 4 Stanton Avenue, Hulkstwon <br>
+                Email:cossieplay@ gmail.com.
+            </p>
+            <h4>
+                ©CossiePlay
+            </h4>
+        </div>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,88 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>CossiePlay</title>
+    <link href="style_a1.css" rel="stylesheet" type="text/css">
+    <script>
+        function run_first() {
+            var id_var = sessionStorage.li_id;
+            if (id_var) {
+                document.getElementById(id_var).style.backgroundColor = "#FFFFFF";
+            }
+        }
+        function nav_li_selected(li_id) {
+            for (i = 0; i < 7; i++) {
+                document.getElementById(i.toString()).style.backgroundColor = "";
+            }
+            document.getElementById(li_id.toString()).style.backgroundColor = "#FFFFFF";
+            sessionStorage.li_id = li_id.toString()
+        }
+    </script>
+</head>
+<body onLoad="run_first()">
+    <div id="wrapper">
+        <div id="header">
+            <div id="top">
+                <div id="logo"><img src="images/logo.png" alt=""></div>
+                <h1>Cosplay hobby? Cosplay lifestyle!</h1>
+                <div class="clear"></div>
+            </div>
+            <div id="menu">
+                <ul>
+                    <li id="menuItem1"><a href="index.html" id="0" onClick="nav_li_selected(0)">Home</a></li>
+                    <li id="menuItem2"><a href="about_us.html" id="1" onClick="nav_li_selected(1)">About Us</a></li>
+                    <li id="menuItem3"><a href="discount_news.html" id="2" onClick="nav_li_selected(2)">Discount News</a></li>
+                    <li id="menuItem4"><a href="cossieplay_party.html" id="3" onClick="nav_li_selected(3)">CossiePlay Party</a></li>
+                    <li id="menuItem5"><a href="products.html" id="4" onClick="nav_li_selected(4)">Products</a></li>
+                    <li id="menuItem6"><a href="contact_us.html" id="5" onClick="nav_li_selected(5)" style="color:#F0AE60; border:solid;">Contact Us</a></li>
+                    <li id="menuItem7"><a href="sign_up.html" id="6" onClick="nav_li_selected(6)">Sign up</a></li>
+                </ul>
+            </div>
+            <div class="clear"></div>
+        </div>
+
+        <div id="content">
+            <h1>Contact Us</h1>
+            <div id="contact">
+                <div class="text">
+                    <p style="color: red"><b>Notice:</b></p>
+                    <p>
+                        If you would like to know more informatin about a product, please provide the product's name or link.<br>
+                        If you would like to know your order status, please provide your order number. <br>
+                        If you are not satisfied with the product you receive or the product is defective, please send the product's order number and photos to cossieplay@ gmail.com.<br>
+                        Thank you!
+                    </p>
+                </div>
+            </div>
+
+            <div id="contactbox">
+                <p style="color:#1D4BB4">
+                    Phone: 07 4771 1234 <br>
+                    Fax: 07-4771 1235 <br>
+                    Address: 4 Stanton Avenue, Hulkstwon <br>
+                    Email:cossieplay@ gmail.com.
+                </p> <br>
+
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3540.0859409801164!2d153.0271855!3d-27.4665837!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b915a1d064dcb2f%3A0x7f3aed61f0bfd9e3!2sJames+Cook+University%2C+Brisbane+Campus!5e0!3m2!1svi!2sau!4v1502784716625" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+            </div>
+
+        </div>
+        <div id="footer">
+            <p>
+                Phone: 07 4771 1234 <br>
+                Fax: 07-4771 1235 <br>
+                Address: 4 Stanton Avenue, Hulkstwon <br>
+                Email:cossieplay@ gmail.com.
+            </p>
+            <h4>
+                ©CossiePlay
+            </h4>
+        </div>
+
+    </div>
+
+
+</body>
+</html>

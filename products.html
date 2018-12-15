@@ -1,0 +1,176 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>CossiePlay</title>
+    <link href="style_a1.css" rel="stylesheet" type="text/css">
+    <script>
+        function run_first() {
+            var id_var = sessionStorage.li_id;
+            if (id_var) {
+                document.getElementById(id_var).style.backgroundColor = "#FFFFFF";
+            }
+        }
+        function nav_li_selected(li_id) {
+            for (i = 0; i < 7; i++) {
+                document.getElementById(i.toString()).style.backgroundColor = "";
+            }
+            document.getElementById(li_id.toString()).style.backgroundColor = "#FFFFFF";
+            sessionStorage.li_id = li_id.toString()
+        }
+    </script>
+</head>
+<body onLoad="run_first()">
+    <div id="wrapper">
+        <div id="header">
+            <div id="top">
+                <div id="logo"><img src="images/logo.png" alt=""></div>
+                <h1>Cosplay hobby? Cosplay lifestyle!</h1>
+                <div class="clear"></div>
+            </div>
+            <div id="menu">
+                <ul>
+                    <li id="menuItem1"><a href="index.html" id="0" onClick="nav_li_selected(0)">Home</a></li>
+                    <li id="menuItem2"><a href="about_us.html" id="1" onClick="nav_li_selected(1)">About Us</a></li>
+                    <li id="menuItem3"><a href="discount_news.html" id="2" onClick="nav_li_selected(2)">Discount News</a></li>
+                    <li id="menuItem4"><a href="cossieplay_party.html" id="3" onClick="nav_li_selected(3)">CossiePlay Party</a></li>
+                    <li id="menuItem5"><a href="products.html" id="4" onClick="nav_li_selected(4)" style="color:#AB63C7; border:solid;">Products</a></li>
+                    <li id="menuItem6"><a href="contact_us.html" id="5" onClick="nav_li_selected(5)">Contact Us</a></li>
+                    <li id="menuItem7"><a href="sign_up.html" id="6" onClick="nav_li_selected(6)">Sign up</a></li>
+                </ul>
+            </div>
+            <div class="clear"></div>
+        </div>
+
+        <div id="content">
+            <h1>Our products</h1>
+            <div id="newproducts">
+                <p style="color:#1D4BB4">
+                    <b>
+                        We create custom cosplay and fancy dress costumes. <br>
+                        Costumes may take between 1 and 50 weeks.<br /> And cost may vary from $10 and $10,000. <br>
+                        We buy and sell second-hand costumes as well.
+                    </b>
+                </p>
+
+                <div class="gallery">
+                    <a target="_blank" href="images/alice-in-wonderland-872612_1280.jpg"><img src="images/alice-in-wonderland-872612_1280.jpg" alt="" width="300" height="200"></a>
+                    <div class="desc">Alice in wonderland</div>
+                </div>
+
+                <div class="gallery">
+                    <a target="_blank" href="images/devils-570861_1280.jpg"><img src="images/devils-570861_1280.jpg" alt="" width="600" height="400"></a>
+                    <div class="desc">Devils</div>
+                </div>
+
+                <div class="gallery">
+                    <a target="_blank" href="images/we-re-rabbits-1439192-1279x850.jpg"><img src="images/we-re-rabbits-1439192-1279x850.jpg" alt="Mountains" width="600" height="400"></a>
+                    <div class="desc">We are rabbits</div>
+                </div>
+
+                <div class="gallery">
+                    <a target="_blank" href="images/spiderman-in-nature-2-1258899-640x480.jpg"><img src="images/spiderman-in-nature-2-1258899-640x480.jpg" alt="" width="600" height="400"></a>
+                    <div class="desc">Spiderman in nature</div>
+                </div>
+
+                <div class="gallery">
+                    <a target="_blank" href="images/boromir-4-1478698.jpg"><img src="images/boromir-4-1478698.jpg" alt="" width="600" height="400"></a>
+                    <div class="desc">Boromir</div>
+                </div>
+
+                <div class="gallery">
+                    <a target="_blank" href="images/olaf-630522_1280.jpg"><img src="images/olaf-630522_1280.jpg" alt="Mountains" width="600" height="400"></a>
+                    <div class="desc">Olaf</div>
+                </div>
+
+                <div class="gallery">
+                    <a target="_blank" href="images/winter-kingdom-798279_1920.jpg"><img src="images/winter-kingdom-798279_1920.jpg" alt="Mountains" width="600" height="400"></a>
+                    <div class="desc">Winter kingdom</div>
+                </div>
+
+            </div>
+
+            <div id="table">
+                <p><b>Current price list of second-hand costumes</b></p>
+                <table>
+                    <tr>
+                        <td width="50%"><b>Costume</b></td>
+                        <td width="25%"><b>Size</b></td>
+                        <td width="25%"><b>Price</b></td>
+                    </tr>
+                    <tr>
+                        <td width="50%">Spiderman</td>
+                        <td width="25%">12</td>
+                        <td width="25%">$49</td>
+                    </tr>
+                    <tr>
+                        <td width="50%">Elf</td>
+                        <td width="25%">16</td>
+                        <td width="25%">$35</td>
+                    </tr>
+                    <tr>
+                        <td width="50%">Darth Vader</td>
+                        <td width="25%">M</td>
+                        <td width="25%">$149</td>
+                    </tr>
+                    <tr>
+                        <td width="50%">Iron Man (with rocket boots)</td>
+                        <td width="25%">M</td>
+                        <td width="25%">$2500</td>
+                    </tr>
+                    <tr>
+                        <td width="50%">Bayonetta</td>
+                        <td width="25%">8</td>
+                        <td width="25%">$300</td>
+                    </tr>
+                    <tr>
+                        <td width="50%">Diablo III – Demon Hunter</td>
+                        <td width="25%">10</td>
+                        <td width="25%">$250</td>
+                    </tr>
+                    <tr>
+                        <td width="50%">Harley Quinn</td>
+                        <td width="25%">18</td>
+                        <td width="25%">$125</td>
+                    </tr>
+                    <tr>
+                        <td width="50%">Metroid – Samus Aran</td>
+                        <td width="25%">L</td>
+                        <td width="25%">$850</td>
+                    </tr>
+                    <tr>
+                        <td width="50%">Peter Pan</td>
+                        <td width="25%">XS</td>
+                        <td width="25%">$49</td>
+                    </tr>
+                    <tr>
+                        <td width="50%">Princess Leia (White)</td>
+                        <td width="25%">10</td>
+                        <td width="25%">$100</td>
+                    </tr>
+                    <tr>
+                        <td width="50%">Spock (Star Trek)</td>
+                        <td width="25%">S</td>
+                        <td width="25%">$1235</td>
+                    </tr>
+                </table>
+            </div>
+
+        </div>
+
+        <div id="footer">
+            <p>
+                Phone: 07 4771 1234 <br>
+                Fax: 07-4771 1235 <br>
+                Address: 4 Stanton Avenue, Hulkstwon <br>
+                Email:cossieplay@ gmail.com.
+            </p>
+            <h4>
+                ©CossiePlay
+            </h4>
+        </div>
+
+    </div>
+
+</body>
+</html>
